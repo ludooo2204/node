@@ -7,6 +7,6 @@ app.get('/',(req,res)=>{
     res.send('Hello world!')
 })
 app.use('/photbo',testRouter)
-app.listen(port, ()=>{
+app.listen(process.env.PORT || port, ()=>{
     console.log("exemple d'app fonctionnant sur le port",port)
 })
